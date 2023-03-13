@@ -1,7 +1,7 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
-
+// mysql = require("mysql2");
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -10,7 +10,9 @@ const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "Lamadev123",
+  // password: "ranoldo",
   database: "test",
+  port: 3306,
 });
 
 app.get("/", (req, res) => {
@@ -40,7 +42,7 @@ app.post("/books", (req, res) => {
 
   db.query(q, [values], (err, data) => {
     if (err) return res.send(err);
-    return res.json(data);
+    return res.json("book has been created successfully");
   });
 });
 
