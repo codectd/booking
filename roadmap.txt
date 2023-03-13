@@ -1,0 +1,17 @@
+1. UI
+    1. UI Skeleton(done)
+    2. Connect to apis
+    3. Add state and logic
+2. Backend - separate app
+    1. Refactor project name(done)
+    2. Find concrete sql db node example(done)
+        1. https://www.youtube.com/watch?v=0aPLk2e2Z3goccer
+    3. Create node app and install express(in progress)
+    4. Hook up express web server(done)
+    5. Config and connect to db(in progress)
+3. Enhancements
+    1. Redux
+    2. Testing
+    3. API into java 
+
+
