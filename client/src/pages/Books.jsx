@@ -7,6 +7,36 @@ import { Link } from "react-router-dom";
 const Books = () => {
   const [books, setBooks] = useState([]);
 
+  const json = [
+    {
+      title: "After Dark in Central Park",
+      year: 1900,
+      cast: [],
+      genres: [],
+      href: null,
+    },
+    {
+      title: "Boarding School Girls' Pajama Parade",
+      year: 1900,
+      cast: [],
+      genres: [],
+      href: null,
+    },
+    {
+      title: "Buffalo Bill's Wild West Parad",
+      year: 1900,
+      cast: [],
+      genres: [],
+      href: null,
+    },
+  ];
+
+  const filteredJson = json.filter(
+    (json) => json.title === "After Dark in Central Park"
+  );
+
+  console.log("filtered json", filteredJson);
+
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
